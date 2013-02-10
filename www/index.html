@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.2.0.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/ios-mobile-theme.css" />
+        <title>Home</title>
+    </head>
+    <body>
+       
+        <div data-role="page">
+            <div data-role="content">
+                <p>Phone Gap Demo</p>
+                
+                
+                <ul data-role="listview" data-inset="true">
+                    <li><a href="#formElements">Form Elements</a></li>
+                    <li><a href="#listViews">List Views</a></li>
+                </ul> 
+                
+                <br />
+                
+                <br />
+                
+            </div><!-- /ui-body wrapper -->	
+        </div><!-- /page -->
+        
+        
+        <div data-role="page" id="map-page">
+            <div id="map_canvas"></div>
+        </div>
+        
+        <div data-role="page" id="formElements">
+            
+            <div data-role="header" data-position="fixed">
+                <h1>Form Elements</h1>
+                <a href="#" data-rel="back" data-theme="a">Back</a>
+            </div><!-- /header -->
+            
+            <div data-role="content">
+                
+                <div data-role="fieldcontain">
+                    
+                    <label>Some Fields and Inputs:</label>
+                    
+                    <br /><br />
+                    
+                    <input type="range" />
+                    
+                    <br /><br />
+                    
+                    <input type="search" />
+                    
+                    <br /><br />
+                    
+                    <input type="email" />
+                    
+                    <br />
+                    
+                </div>
+                
+                <div data-role="fieldcontain">
+                    <label for="slider">Select slider:</label>
+                    <select name="slider" id="slider" data-role="slider">
+                        <option value="off">OFF</option>
+                        <option value="on">ON</option>
+                    </select>
+                </div>
+                
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <legend>Choose a pet:</legend>
+                        <input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked" />
+                        <label for="radio-choice-1">Cat</label>
+                        
+                        <input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2"  />
+                        <label for="radio-choice-2">Dog</label>
+                        
+                        <input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3"  />
+                        <label for="radio-choice-3">Hamster</label>
+                    </fieldset>
+                </div>
+                
+                <a disabled="disabled" data-role="button" class="ui-btn-plain">Inactive &lt;a&gt;</a>
+                
+                <a data-role="button" class="ui-btn-plain">Active &lt;a&gt;</a>
+                
+                <button disabled="disabled" class="ui-btn-plain">Inactive &lt;button&gt;</button>
+                
+                <button class="ui-btn-plain">Active &lt;button&gt;</button>
+                
+                <p><small>Does the above look funny? Consider it a bug in jQuery mobile where the classes from the underling &lt;button&gt; are not being attached to the new DOM</small></p>
+                
+            </div>
+            
+        </div>
+        
+        <div data-role="page" id="portada-observador">
+            
+            <div data-role="content">
+                <ul data-role="listview" id="noticias">
+                    <li data-role="list-divider">Portada</li>
+                </ul>
+            </div>
+                
+        </div>
+            
+        <div data-role="page" id="listViews">
+            
+            <div data-role="content">
+                
+                <ul data-role="listview">
+                    <li data-role="list-divider">Divider</li>
+                    <li><a href="#">Anatomy of a page</a></li>
+                    <li><a href="#">Page transitions</a></li>
+                    <li><a href="#">Dialogs</a></li>
+                    <li><a href="#">Navigation: Ajax, hashes &amp; history</a></li>
+                    <li><a href="#">Link format examples</a></li>
+                    <li><a href="#">Theming pages</a></li>
+                    <li><a href="#">Anatomy of a page</a></li>
+                    <li><a href="#">Page transitions</a></li>
+                    <li><a href="#">Dialogs</a></li>
+                    <li><a href="#">Navigation: Ajax, hashes &amp; history</a></li>
+                    <li><a href="#">Link format examples</a></li>
+                    <li><a href="#">Theming pages</a></li>
+                    <li><a href="#">Anatomy of a page</a></li>
+                    <li><a href="#">Page transitions</a></li>
+                    <li><a href="#">Dialogs</a></li>
+                    <li><a href="#">Navigation: Ajax, hashes &amp; history</a></li>
+                    <li><a href="#">Link format examples</a></li> 
+                    <li><a href="#">Theming pages</a></li>
+                    <li><a href="#">Anatomy of a page</a></li> 
+                    <li><a href="#">Page transitions</a></li> 
+                    <li><a href="#">Dialogs</a></li> 
+                    <li><a href="#">Navigation: Ajax, hashes &amp; history</a></li> 
+                    <li><a href="#">Link format examples</a></li> 
+                    <li><a href="#">Theming pages</a></li>
+                </ul> 
+                
+            </div>
+            
+        </div>
+  
+  
+        <script type="text/javascript" src="cordova-2.3.0.js"></script>
+        <script type="text/javascript" src="js/TabBar.js"></script>
+        <script type="text/javascript" src="js/NavigationBar.js"></script>
+        <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.2.0.min.js"></script>
+        <script src="http://debug.phonegap.com/target/target-script-min.js#guilespi"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAV4SRe-vDtnVCqxKPBlf4ysYfBuw5fdVI&sensor=true">
+         </script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
